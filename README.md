@@ -1,6 +1,5 @@
 # flutter_travis
-<br>
-[![Build Status](https://travis-ci.org/ameysunu/flutter_travis.svg?branch=master)](https://travis-ci.org/ameysunu/flutter_travis)
+https://travis-ci.org/ameysunu/flutter_travis.svg?branch=master
 
 Sample Travis CI for Flutter(Smoke Testing)
 
