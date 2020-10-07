@@ -1,6 +1,6 @@
 # flutter_travis
 
-A new Flutter project.
+Sample Travis CI for Flutter(Smoke Testing)
 
 ## Getting Started
 
