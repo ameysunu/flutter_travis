@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Travis CI ',
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -36,6 +37,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(
+                Icons.ac_unit,
+                color: Colors.white,
+              ),
+              onPressed: () => popUp(context))
+        ],
         backgroundColor: Colors.pink,
         title: Text(widget.title),
       ),
@@ -61,4 +70,10 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+}
+
+Widget popUp(BuildContext context) {
+  return AlertDialog(
+    title: Text("Sup"),
+  );
 }
